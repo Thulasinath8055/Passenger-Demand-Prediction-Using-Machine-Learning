@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚆 Passenger Demand Prediction Using Machine Learning
 
 ## 📌 Overview
@@ -89,3 +90,4 @@ gmail: thulasinath8055@gmail.com
 
 This project is intended for academic and learning purposes.
 
+=======
