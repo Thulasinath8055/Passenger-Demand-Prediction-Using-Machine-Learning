@@ -74,18 +74,10 @@ git clone https://github.com/Thulasinath8055/Passenger-Demand-Prediction-Using-M
 cd Passenger-Demand-Prediction-Using-Machine-Learning
 2️⃣ Install dependencies
 pip install -r requirements.txt
-
-3️⃣ Run the notebooks
-jupyter notebook
-🔮 Future Enhancements
-
-Time-series forecasting using LSTM
-
-Integration of external factors (weather, holidays, events)
-
-Real-time demand prediction
-
-Deployment as a web application or API
+go to core project folder path
+run: python manage.py runserver
+click the https link and open it any browser
+register > login > predict
 
 👤 Author
 
@@ -96,3 +88,4 @@ gmail: thulasinath8055@gmail.com
 📄 License
 
 This project is intended for academic and learning purposes.
+
