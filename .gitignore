@@ -1,0 +1,93 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+venv/
+.env/
+.env*/
+.venv/
+pip-wheel-metadata/
+
+# ========================
+# Jupyter / Notebooks
+# ========================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# ========================
+# Data (DO NOT COMMIT RAW DATA)
+# ========================
+data/raw/
+data/interim/
+data/processed/
+data/external/
+*.csv
+*.tsv
+*.xlsx
+*.parquet
+*.json
+*.zip
+
+# Keep folder structure
+!data/**/.gitkeep
+
+# ========================
+# Models / Outputs
+# ========================
+models/
+checkpoints/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+
+# ========================
+# ML Experiment Tracking
+# ========================
+mlruns/
+wandb/
+tensorboard/
+tb_logs/
+lightning_logs/
+runs/
+
+# ========================
+# Logs
+# ========================
+logs/
+*.log
+
+# ========================
+# Cache / Temp
+# ========================
+.cache/
+.tmp/
+*.tmp
+
+# ========================
+# IDE / OS
+# ========================
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.DS_Store
+Thumbs.db
+
+# ========================
+# Config secrets
+# ========================
+*.env
+config/secrets.yaml
+config/secrets.yml

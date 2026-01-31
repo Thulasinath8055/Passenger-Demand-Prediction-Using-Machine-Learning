@@ -1,0 +1,149 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>TransitML – Welcome</title>
+</head>
+<body>
+
+    <h1>🚇 TransitML</h1>
+    <h3>Metro Passenger Demand Prediction</h3>
+
+    <hr>
+
+    <p>
+        Please login or register to continue.
+    </p>
+
+    <br>
+
+    <a href="{% url 'login' %}">
+        <button>Login</button>
+    </a>
+
+    <a href="{% url 'register' %}">
+        <button>Register</button>
+    </a>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TransitML – Welcome</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+        }
+
+        .container {
+            background-color: #ffffff;
+            color: #333;
+            padding: 40px 50px;
+            border-radius: 12px;
+            width: 380px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.3rem;
+            color: #1e88e5;
+        }
+
+        h3 {
+            margin-top: 8px;
+            font-weight: 500;
+            color: #555;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #e0e0e0;
+            margin: 25px 0;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 22px;
+            font-size: 0.95rem;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn {
+            background-color: #1e88e5;
+            color: white;
+        }
+
+        .login-btn:hover {
+            background-color: #1565c0;
+        }
+
+        .register-btn {
+            background-color: #f5f5f5;
+            color: #333;
+            border: 1px solid #ccc;
+        }
+
+        .register-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🚇 TransitML</h1>
+        <h3>Metro Passenger Demand Prediction</h3>
+
+        <hr>
+
+        <p>Please login or register to continue.</p>
+
+        <div class="buttons">
+            <a href="{% url 'login' %}">
+                <button class="login-btn">Login</button>
+            </a>
+
+            <a href="{% url 'register' %}">
+                <button class="register-btn">Register</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

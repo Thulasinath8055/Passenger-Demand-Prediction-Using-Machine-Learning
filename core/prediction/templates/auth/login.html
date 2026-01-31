@@ -1,0 +1,94 @@
+<!-- <h2>Login</h2>
+<form method="post">
+  {% csrf_token %}
+  <input name="username" placeholder="Username">
+  <input name="password" type="password" placeholder="Password">
+  <button type="submit">Login</button>
+</form> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TransitML – Login</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-card {
+            background: #ffffff;
+            padding: 40px 45px;
+            width: 360px;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #1e88e5;
+            font-size: 2rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 0.95rem;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #1e88e5;
+            box-shadow: 0 0 0 2px rgba(30, 136, 229, 0.15);
+        }
+
+        button {
+            width: 100%;
+            padding: 11px;
+            margin-top: 10px;
+            background-color: #1e88e5;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-card">
+        <h2>Login</h2>
+
+        <form method="post">
+            {% csrf_token %}
+            <input name="username" placeholder="Username" required>
+            <input name="password" type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+</html>

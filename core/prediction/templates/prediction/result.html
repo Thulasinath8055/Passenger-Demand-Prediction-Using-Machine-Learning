@@ -1,0 +1,174 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Results</title>
+</head>
+<body>
+
+    <h2>Metro Passenger Prediction Results</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Model</th>
+            <th>Predicted Passengers</th>
+        </tr>
+        <tr>
+            <td>Random Forest</td>
+            <td>{{ rf_pred }}</td>
+        </tr>
+        <tr>
+            <td>Decision Tree</td>
+            <td>{{ dt_pred }}</td>
+        </tr>
+        <tr>
+            <td>Prophet</td>
+            <td>{{ prophet_pred }}</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <a href="{% url 'predict' %}">🔁 Predict Again</a>
+    <br><br>
+    <a href="{% url 'logout' %}">🚪 Logout</a>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TransitML – Prediction Results</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .results-card {
+            background: #ffffff;
+            width: 480px;
+            padding: 40px 45px;
+            border-radius: 14px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #1e88e5;
+            font-size: 1.8rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+        }
+
+        th, td {
+            padding: 12px 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f5f7fa;
+            color: #333;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #fafafa;
+        }
+
+        td {
+            color: #444;
+            font-size: 0.95rem;
+        }
+
+        .model-name {
+            font-weight: 600;
+        }
+
+        .prediction {
+            color: #1e88e5;
+            font-weight: 600;
+        }
+
+        .actions {
+            margin-top: 10px;
+        }
+
+        .actions a {
+            display: inline-block;
+            margin: 8px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .again-btn {
+            background-color: #1e88e5;
+            color: #ffffff;
+        }
+
+        .again-btn:hover {
+            background-color: #1565c0;
+        }
+
+        .logout-btn {
+            background-color: #f5f5f5;
+            color: #e53935;
+            border: 1px solid #ddd;
+        }
+
+        .logout-btn:hover {
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="results-card">
+        <h2>Metro Passenger Prediction Results</h2>
+
+        <table>
+            <tr>
+                <th>Model</th>
+                <th>Predicted Passengers</th>
+            </tr>
+            <tr>
+                <td class="model-name">Random Forest</td>
+                <td class="prediction">{{ rf_pred }}</td>
+            </tr>
+            <tr>
+                <td class="model-name">Decision Tree</td>
+                <td class="prediction">{{ dt_pred }}</td>
+            </tr>
+            <tr>
+                <td class="model-name">Prophet</td>
+                <td class="prediction">{{ prophet_pred }}</td>
+            </tr>
+        </table>
+
+        <div class="actions">
+            <a href="{% url 'predict' %}" class="again-btn">🔁 Predict Again</a>
+            <a href="{% url 'logout' %}" class="logout-btn">🚪 Logout</a>
+        </div>
+    </div>
+
+</body>
+</html>
